@@ -1,0 +1,23 @@
+#loginMaske{    
+
+    margin: 40px;
+    padding: 20px;
+}
+
+#registerMaske{
+
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+body{
+    background-color: dodgerblue;
+    text-align: center;
+    background-image: url(/Images/Background.png);
+    color: white;
+}
+

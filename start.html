@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf of Software</title>
+<link rel ="stylesheet" href = "CSS/start.css">
+</head>
+<body>
+    <h1> Wolf of Software</h1>
+    <div class = "loginMaske">
+        
+        <div id = "login">
+            <p> Please Login</p>
+            <input id = "username" type="text" placeholder="username">
+            <br>
+            <input id = "password" type="password" placeholder="password" onkeydown="checkEnter(event)">
+            <br>
+            <button id = "loginButton" onklick="checkLogin()"> Log in </button>
+            <p id = "loginStatus"></p>
+        </div>
+
+        <div id ="register">
+        <a href = "register.html">
+        <button id="registerButton">Create an account</button>
+        </a>
+        </div>
+    </div>
+    
+    <script>
+
+        function checkEnter(event   ){
+            if (event.key === "Enter"){
+                checkLogin();
+            }
+        }
+
+        function checkLogin() {
+            const usernameInput = document.getElementById("username").value;
+            const passwordInput = document.getElementById("password").value;
+            const loginStatus  = document.getElementById("loginStatus");
+
+            const correctUsername = "Jakob";
+            const correctPassword = "1312";
+
+            if(usernameInput === correctUsername && passwordInput === correctPassword){
+                loginStatus.textContent = "Welcome; to the Wolf of Software";
+                window.location.href = "apps.html"
+            } else {
+                loginStatus.textContent = "Access denied";
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+
+<div id="LoginMaske">
+    <h1>Please Login</h1>
+
+    <form>
+        <div class="form-group"> 
+            <input id="username" type="text" placeholder="username" autocomplete="username">
+        </div>
+        <div class="form-group">
+            <input id="password" type="password" placeholder="password" onkeydown="checkEnter(event)" autocomplete="current-password">
+        </div>
+        <button id="loginButton" onclick="checkLogin()">Login</button>
+        <p id="loginStatus"></p>
+    </form>
+</div>
+
+<script> 
+
+    function checkEnter(event) {
+        if (event.key === "Enter") {
+            checkLogin();
+        }
+    }
+
+    function checkLogin() {
+        const usernameInput = document.getElementById("username").value;
+        const passwordInput = document.getElementById("password").value;
+        const loginStatus = document.getElementById("loginStatus");
+
+        const correctUsername = "Jakob";
+        const correctPassword = "1312";
+
+        if (usernameInput === correctUsername && passwordInput === correctPassword) {
+            loginStatus.textContent = "Welcome to the Wolf of Software";
+            setTimeout(function (){
+            window.location.href = "apps.html";
+            }, 3000);
+            
+
+        } else {
+            setTimeout(function (){
+                loginStatus.textContent = "Access denied";
+            }, 3000);
+        
+        }
+    }
+
+</script>
+
+</body>
+</html>
+
+
+

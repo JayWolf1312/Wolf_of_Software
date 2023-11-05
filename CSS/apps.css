@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center; /* Ensure the body takes the full viewport height */
+    margin: 0;
+    background-image: url('/Images/Background.png');
+    color: white;
+}
+
+.apps-container {
+    display: flex; /* Display apps side by side */
+    margin-top: 20px; /* Add some space between h1 and apps */
+}
+
+.app-container {
+    text-align: center;
+    margin: 0 40px; /* Add margin between the app containers */
+}
+
+.app-container.Game {
+    margin: 0; /* Remove the margin on this container */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically inside this container */
+    align-items: center; /* Center items horizontally inside this container */
+}
+
+h1 {
+    height: 20vh;
+}
+
+.Header {
+    text-align: center;
+}
+
+.app-container img {
+    width: 100px; /* Set a fixed width for the icons */
+    height: 100px; /* Set a fixed height for the icons */
+}
+
+#logout {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin: 10px; /* Add some margin to the div */
+}
+
+#logout a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#logout span {
+    margin-top: 5px; /* Add some spacing between the image and text */
+    display: block;
+}
+
+.Links {
+    flex-basis: 300px;
+    background-color: aliceblue;
+}
+
+#settings{
+    position: fixed;
+    top: 0;
+    left: 0;
+}

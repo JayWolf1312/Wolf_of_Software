@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/register.css">
+</head>
+<body>
+
+    <div id="LoginMaske">
+        <h1> Create an account</h1>
+        <input id="username" type="text" placeholder="username">
+        <br>
+        <input id="password" type="password" placeholder="password">
+        <br>
+        <input id="password2" type="password" placeholder="repeat password" onkeydown="checkEnter(event)">
+        <br>
+        <button id = "registerButton" onclick="checkRegister()">Create Account</button>
+        <p id="registerStatus"></p>
+    </div>
+    <script>
+        
+        function checkEnter(event) {
+            if (event.key === "Enter") {
+                checkRegister();
+            }
+        }
+
+        function checkRegister(){
+
+            const usernameInput = document.getElementById("username").value;
+            const passwordInput = document.getElementById("password").value;
+            const password2Input = document.getElementById("password2").value;
+            const registerStatus = document.getElementById("registerStatus");
+
+            if(usernameInput === "Jakob"){
+                registerStatus.textContent = "This username is already taken";
+            } else if(passwordInput != password2Input){
+                registerStatus.textContent = "Passwords do not match";
+            } else if(usernameInput.length === 0){
+                registerStatus.textContent = "Please insert a username to continue";
+            } else if(passwordInput.length === 0){
+                registerStatus.textContent = "Please insert a password to continue";
+            }
+            else {
+                registerStatus.textContent = "Account created successfully!";
+                window.location.href = "start.html";
+            }   
+        }
+    </script>
+</body>
+</html>
