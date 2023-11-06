@@ -10,11 +10,20 @@
     <div class="Header">
         <h1>Currency Converter</h1>
         <div class="Links">
-            <a href="apps.html">Home</a>
-            <a href="calculator.html">Calculator</a>
-            <a href="portfolio.html">Portfolio</a>
-        </div>
-    </div> 
+            <a href="apps.html">
+                <img src="Images/7133312.png" height="50px">
+            </a>
+            <a href="calculator.html">
+                <img src="Images/Calculator.png" height="50px">
+            </a>
+            <a href="portfolio.html">
+                <img src="Images/Portfolio.png" height="50px">
+            </a>
+            <a href="game.html">
+                <img src="/Images/Game.png" height="50px">
+            </a>
+        </div> 
+    </div>
 
     <div class ="Converter">
 
@@ -56,9 +65,8 @@
             <img src ="/Images/logout_icon_151219.png" height= 60px>
         </a>
     </div>
-        
+ 
     <script>
-
         function convertCurrency(){
             const amount = document.getElementById("amount").value;
             const fromCurrency = document.getElementById("fromCurrency").value;
@@ -85,12 +93,7 @@
             } else {
                 document.getElementById("result").textContent = "Invalid conversion.";
             }
-
         }
-
-
-
-    </script>
-
+        </script>
 </body>
 </html>
