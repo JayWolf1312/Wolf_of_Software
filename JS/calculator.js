@@ -1,8 +1,21 @@
-const Namen = ["Jakob", "Armend", "Daniel", "Phil"];
-for (let i = 0; i < 100000; i++){
-    const index = i % Namen.length;
-    console.log(Namen[index]);
+let displayValue = "";
+
+function appendToDisplay(value){
+    displayValue += value;
+    document.getElementById('display').value = displayValue;
 }
 
+function clearDisplay(){
+    displayValue = '';
+    document.getElementById('display').value = '';
+}
 
-const plainText = "This is my password";
+function calculate(){
+    try{
+        const result = eval(displayValue);
+        document.getElementById('display').value = result;
+        displayValue = String(result);
+    }catch(error){
+        document.getElementById('display').value = "Error";
+    }
+}
