@@ -86,3 +86,68 @@ Email
     </form>
   </body>
 </html>
+
+
+
+// this is for changing colors 
+<!doctype html>
+<html>
+ <head>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <div id="buttons">
+   <div class="row">
+    <button 
+onclick
+="toggleBold()">Bold</button>
+    <button 
+onclick
+="toggleItalic()">Italic</button>
+   </div>
+   <div class="row">
+    <button 
+onclick
+="toggleUnderline()">Underline</button>
+    <button 
+onclick
+="toggleMonospace()">Monospace</button>
+   </div>
+   <div class="row">
+    <button 
+onclick
+="removeFormat()">Remove Format</button>
+   </div>
+  </div>
+  <br>
+  <p>It was a bright cold day in April, and the clocks were striking
+   thirteen. </p>
+  <script src="script.js"></script>
+ </body>
+</html>
+
+//JS 
+
+const el = document.querySelector("p");
+ 
+function toggleBold() {
+ el.classList.toggle("bold");
+}
+
+function toggleItalic() {
+ el.classList.toggle("italic");
+}
+
+function toggleUnderline() {
+ el.classList.toggle("underline");
+}
+
+function toggleMonospace() {
+ el.classList.toggle("grey-text");
+ el.classList.toggle("mono");
+}
+
+function removeFormat() {
+ el.classList.remove("bold", "italic", "underline", "center-text",
+  "grey-text", "mono");
+}

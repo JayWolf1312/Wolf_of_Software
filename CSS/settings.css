@@ -1,0 +1,9 @@
+body{
+    background-image: url(/Images/Background.png);
+}
+
+.Logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
