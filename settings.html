@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
-    <link rel ="stylesheet" href="CSS/settings.css">
+    <link rel="stylesheet" href="CSS/settings.css">
 </head>
 <body>
     
@@ -28,23 +28,22 @@
 
     <div class="Settings">
         
-        <label for="Font-Family">Change Font-Family</label bold>
-
-            <select id="Font-Family">
-                <option value="Italic">Italic</option>
-                <option value="Arial">Arial</option>
-                <option value="Courier New">Courier New</option>
-            </select>
-
-            <h4> Change Font-Size</h4>
-            <input type="range" id="Font-Size" min="10" max="50" step="1">
-            <p id="input"></p>
-
-        <div class="Background">
-            <h4>Change Background Image</h4>
+        <div class="User">
+            <h2 onclick="toggleList('userList')">User Settings</h2>
+            <ul id="userList" style="display: none;">
+                <li>Change Username</li>
+                <li>Change Passwort</li>
+            </ul>
         </div>
 
-        <div class=""
+        <div class="Layout">
+            <h2 onclick="toggleList('layoutList')">Layout Settings</h2>
+            <ul id="layoutList" style="display: none;">
+                <li>Font-Size</li>
+                <li>Font-Family</li>
+                <li>Background Image</li>
+            </ul>
+        </div>
 
     </div>    
 
@@ -54,7 +53,7 @@
         </a>
     </div>
 
-    <scipt src="JS/settings.js"></scipt>
+    <script src="JS/settings.js"></script>
 
 </body>
 </html>

@@ -1,11 +1,5 @@
-function changeFontSize(){
-
-    const fontSize = document.addEventListener("Font-Size");
-
+function toggleList(listID){
+    const list = document.getElementById(listID);
+    list.style.display = list.style.display === 'none' ? 'block' : 'none'; 
+    
 }
-
-changeFontSize();
-
-const input = document.getElementById("input").value;
-input.textContent = input;
-
