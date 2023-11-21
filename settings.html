@@ -27,11 +27,15 @@
     </div>
 
     <div class="Settings">
-        
+
         <div class="User">
             <h2 onclick="toggleList('userList')">User Settings</h2>
             <ul id="userList" style="display: none;">
-                <li>Change Username</li>
+                <li onclick="toggleUsername('username')">Change Username</li>
+                    <ul id="username" style="display: none;">
+                        <input type="text" placeholder="current username"><br>
+                        <input type="text" placeholder="new username">
+                    </ul>
                 <li>Change Passwort</li>
             </ul>
         </div>
@@ -39,7 +43,7 @@
         <div class="Layout">
             <h2 onclick="toggleList('layoutList')">Layout Settings</h2>
             <ul id="layoutList" style="display: none;">
-                <li>Font-Size</li>
+                <input id="size" type="range" placeholder="Font-Size">
                 <li>Font-Family</li>
                 <li>Background Image</li>
             </ul>
