@@ -17,6 +17,8 @@ This is the Wolf of Software. A Cloud-Based Product, written in HTML, CSS and JS
     - Portfolio (portfolio.html, portfolio,css)
     - Game (game.html, game.css, game.js)
 
+- Settings (settings.html; settings.css, settings.js)
+
 ## Technologies
 
 ### Frontend
