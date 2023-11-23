@@ -16,6 +16,7 @@ This is the Wolf of Software. A Cloud-Based Product, written in HTML, CSS and JS
     - Currency Converter (currency.html, currency.css)
     - Portfolio (portfolio.html, portfolio,css)
     - Game (game.html, game.css, game.js)
+    <br><br>
 
 - Settings (settings.html; settings.css, settings.js)
 
@@ -39,3 +40,4 @@ This is the Wolf of Software. A Cloud-Based Product, written in HTML, CSS and JS
 - git add <file>
 - git commit -m "123"
 - git push origin main 
+
