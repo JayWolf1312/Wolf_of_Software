@@ -1,23 +1,48 @@
-#loginMaske{    
-
-    margin: 40px;
-    padding: 20px;
-}
-
-#registerMaske{
-
-    position: absolute;
-    top: 20px; /* Adjust the top position as needed */
-    right: 20px; /* Adjust the right position as needed */
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-body{
+body {
     background-color: dodgerblue;
     text-align: center;
     background-image: url(/Images/Background.png);
     color: white;
+    margin: 0; /* Remove default body margin */
+    height: 70vh; /* Set body height to full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+h1{
+    position: absolute;
+    top: 0;
+}
+
+.loginMaske {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px; /* Adjust the max-width as needed */
+}
+
+#login {
+    text-align: center;
+}
+
+#login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#loginButton {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#loginButton:hover {
+    background-color: dodgerblue
+}

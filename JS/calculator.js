@@ -32,4 +32,4 @@ function handleKeyPress(event) {
     } else if (!isNaN(key) || ['/', '*', '-', '+', '.'].includes(key)) {
         appendToDisplay(key);
     }
-}
+}   

@@ -1,6 +1,43 @@
 body {
-    background-color: dodgerblue;
     background-image: url(/Images/Background.png);
     color: white;
     text-align: center;
+    margin: 0;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#LoginMaske {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+}
+
+#LoginMaske input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#registerButton {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#registerButton:hover {
+    background-color: dodgerblue;
+}
+
+#registerStatus {
+    font-weight: bold;
+    margin-top: 15px;
 }
